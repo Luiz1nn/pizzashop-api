@@ -3,10 +3,17 @@
   "module": "index.ts",
   "type": "module",
   "private": true,
-  "devDependencies": {
-    "@types/bun": "latest"
+  "scripts": {
+    "dev": "bun --watch src/http/server.ts"
   },
-  "peerDependencies": {
+  "dependencies": {
+    "elysia": "^1.2.23"
+  },
+  "devDependencies": {
+    "@rocketseat/eslint-config": "2.1.0",
+    "@types/bun": "latest",
+    "eslint": "8.54.0",
+    "eslint_d": "13.1.1",
     "typescript": "^5"
   }
 }
