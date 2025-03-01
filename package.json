@@ -4,9 +4,11 @@
   "type": "module",
   "private": true,
   "scripts": {
-    "dev": "bun --watch src/http/server.ts"
+    "dev": "bun --watch src/http/server.ts",
+    "generate": "drizzle-kit generate"
   },
   "dependencies": {
+    "@paralleldrive/cuid2": "^2.2.2",
     "drizzle-orm": "^0.40.0",
     "elysia": "^1.2.23",
     "postgres": "^3.4.5"
