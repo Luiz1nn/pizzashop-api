@@ -5,7 +5,9 @@
   "private": true,
   "scripts": {
     "dev": "bun --watch src/http/server.ts",
-    "generate": "drizzle-kit generate"
+    "generate": "drizzle-kit generate",
+    "migrate": "bun src/db/migrate.ts",
+    "studio:dev": "bun --env-file=.env.development drizzle-kit studio"
   },
   "dependencies": {
     "@paralleldrive/cuid2": "^2.2.2",
@@ -17,6 +19,7 @@
   "devDependencies": {
     "@rocketseat/eslint-config": "2.1.0",
     "@types/bun": "latest",
+    "chalk": "^5.4.1",
     "drizzle-kit": "^0.30.5",
     "eslint": "8.54.0",
     "eslint_d": "13.1.1",
