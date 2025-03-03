@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "dev": "bun --watch src/http/server.ts",
-    "generate": "drizzle-kit generate",
+    "generate:dev": "bun --env-file=.env.development drizzle-kit generate",
     "migrate": "bun src/db/migrate.ts",
     "studio:dev": "bun --env-file=.env.development drizzle-kit studio",
     "seed": "bun src/db/seed.ts"
