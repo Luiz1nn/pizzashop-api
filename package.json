@@ -24,6 +24,7 @@
     "chalk": "^5.4.1",
     "drizzle-kit": "^0.30.5",
     "eslint": "8.54.0",
+    "eslint-plugin-drizzle": "^0.2.3",
     "eslint_d": "13.1.1",
     "typescript": "^5"
   }
