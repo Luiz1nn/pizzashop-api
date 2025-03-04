@@ -1,0 +1,9 @@
+POST http://localhost:3333/restaurants
+Content-Type: application/json
+
+{
+  "restaurantName": "Sakamoto",
+  "managerName": "Luis Fernando",
+  "email": "admin@admin.com",
+  "phone": "99999999999"
+}

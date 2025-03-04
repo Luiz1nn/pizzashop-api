@@ -1,5 +1,15 @@
+import chalk from 'chalk'
 import { Elysia } from 'elysia'
+import pino from 'pino'
 
-const app = new Elysia().get('/', () => 'Hello World')
+import { registerRestaurant } from './routes/register-restaurant'
 
-app.listen(3333, () => console.log('🚀 HTTP Server running!'))
+const logger = pino({
+  enabled: true,
+})
+
+const app = new Elysia().decorate('logger', logger).use(registerRestaurant)
+
+app.listen(3333, () => {
+  console.log(chalk.green('🚀 HTTP Server running on port 3333!'))
+})
